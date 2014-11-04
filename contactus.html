@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
 <!-- open container-->
 <div class="container">
     
@@ -45,8 +44,6 @@
     <div class="col-lg-7 col-sm-8"><img src="img/headerimage.jpg" alt="NetDesignsUSA.com believe is in Success By Design" class="hidden-xs img-responsive"></div>
 </header>
     
-    
-
 <!-- row 3 -->
 <div class="row">
 <article class="col-lg-offset-1 col-sm-offset-1 col-lg-8 col-sm-7 col-lg-push-3 col-sm-push-4"> 
@@ -81,10 +78,68 @@
         </tbody>
      </table>
  </div>
-	<img src="img/qrcode4.png" alt="Kourtnie J. Sanders" class="img-responsive">
-        
-        
-        
+
+<p></p>
+<p></p>
+
+<!--form-->
+<h1>Please feel free to fill out our convenient contact form below:</h1>
+           <form>
+         <div class="row">
+        <div class="col-sm-6 form-group name-group">
+              <label for="name" class="control-label">Your name: <span class="glyphicon glyphicon-star"></span></label>
+              <input type="text" id="name" class="form-control">
+              <span class="help-block"></span>
+          </div>
+        <div class="col-sm-6 form-group">
+             <label for="email" class="control-label">Your email:</label>
+             <input type="text" id="email" class="form-control">
+        </div>
+         </div>
+         
+         <div class="row">
+            <div class="col-sm-12 form-group designer-group">
+          <label for="clientschoice" class="control-label">Choose your designer</label>
+          <select id="clientschoice" class="form-control">
+            <option>Please select one:</option>
+            <option value="kjs">Kourtnie J. Sanders</option>
+            <option value="jv">Jumal Vaughn</option>
+            <option value="dw">Dallis Williams</option>        
+          </select>
+          <span class="help-block"></span>
+            </div>
+         </div>
+
+          <div class="row">
+            <div class="col-sm-12 form-group">
+          <fieldset>
+            <legend class="control-label">How may we help you?</legend>
+                        <div class="radio">
+               <label for="gen_inquiry">
+              <input type="radio" name="help" value="gen_inquiry" id="gen_inquiry" checked> General Inquiry
+               </label>
+                        </div>
+                        <div class="radio">
+               <label for="status_update">
+              <input type="radio" name="help" value="status_update" id="status_update"> Project Status Update
+               </label>
+                        </div>
+                        <div class="radio">
+               <label for="sched_app">
+              <input type="radio" name="help" value="sched_app" id="sched_app"> Schedule Appointment
+               </label>
+         </div>
+          </fieldset>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-12 form-group">
+          <label for="comments" class="control-label">Your comments:</label>
+          <textarea id="comments" class="form-control"></textarea>
+            </div>
+         </div>
+        <button name="submit" type="submit" class="btn btn-danger btn-lg">Submit</button>
+      </form>          
 </article>
 
 <aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8"> 
@@ -93,8 +148,6 @@
         <blockquote><i>"Within the short period of time that I have been apart of the everchanging design industry, I have watched this beautiful experiment [the world wide web] transform our lives. I am proud to be one of the individuals who adds a brush stroke to the worlds masterpiece we call the internet. I love what I do!"</i></blockquote>
         <img src="img/kourtniesanders.png" alt="Kourtnie J. Sanders" class="img-responsive">
         <p>To contact Kourtnie directly email her at: <a href="mailto:kourtniesanders@netdesignsusa.com">KourtnieSanders@netdesignsusa.com</a></p>
-        <br />
-        <br />
 
 </aside>
        
@@ -117,10 +170,38 @@
 <!-- close container -->
 </div>
 
+<!-- modal window -->
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Thank you!</h4>
+      </div>
+      <div class="modal-body">
+        <p>Thanks for submitting the form! You will hear back from us shortly.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
       
 <!-- javascript -->
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
     
+    <script>
+        $(document).ready(function(){
+          $('p:even').css({
+    color:'white',
+    backgroundColor:'#edd219'
+});//end of h4 css
+        });//ending ready function
+
+    </script>
 </body>
 </html>

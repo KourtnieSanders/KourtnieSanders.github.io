@@ -193,17 +193,20 @@
 </div>
 </div>
     <!-- end of accordion --> 
+    <img src="img/qrcode4.png" alt="Kourtnie J. Sanders" id="qrcode-img" class="img-responsive">
+<button type="button" class="btn btn-primary" id="qrcode-btn-off">Hide QR code</button><button type="button" class="btn btn-primary" id="qrcode-btn-on">Show QR Code</button>
+
 </article>
 
 <aside class="col-lg-3 col-sm-4 col-lg-pull-9 col-sm-pull-8"> 
         <h2>Free Web Hosting</h2>
         <p>Finding great web hosting can be a difficult and tedious process. With cut-rate pricing, flashy advertisements and confusing jargon, picking a hosting company can sometimes feel like a huge guessing game.</p> 
-		<p>WWe at NetDesignsUSA.com want to take you out of the never ending loop of choices by offering you FREE, unlimited bandwidth web hosting for one year. No, this is not a limited time offer or a gimmick. It is, however, only available for first-time customers with design packages over $250.00. </p>
-		<img src="img/superhero.jpg" alt="Kourtnie J. Sanders" class="img-responsive">
-</aside>
-       
+		<p>We at NetDesignsUSA.com want to take you out of the never ending loop of choices by offering you FREE, unlimited bandwidth web hosting for one year. No, this is not a limited time offer or a gimmick. It is, however, only available for first-time customers with design packages over $250.00. </p>
+		<img src="img/superhero.jpg" alt="Kourtnie J. Sanders" class="img-responsive" id="hero-img">
+    <button type="button" class="btn btn-primary" id="hero-btn">Click to relieve stress</button>
+</aside>    
     </div>
-    
+
 <!-- row 4 -->
 <section class="row">
       <h2> Just a Few Important Tips</h2>
@@ -231,9 +234,6 @@
     <br />
     <br />
     
-    
-    
-    
 <!-- row 6 -->
 <footer class="row">
   <div class="col-lg-9 col-xs-6">
@@ -249,15 +249,16 @@
     
 
 <!-- close container -->
-</div>
-
-      
+</div> 
     
 <!-- javascript -->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
     <script>
-      $('a.btn-info').tooltip()
+        $(document).ready(function(){
+          $('a.btn-info').tooltip();
+        });//ending ready function
     </script>
     
 </body>
