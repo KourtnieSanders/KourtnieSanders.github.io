@@ -45,7 +45,7 @@
     
 <!-- row 3 -->
 <div class="jumbotron">
-         <img src="img/happyguy.png" alt="" class="pull-right img-rounded img-responsive">
+         <img src="img/happyguy.png" alt="" class="pull-right img-rounded img-responsive" id="happyguy-img">
          <h1>You've got options!</h1>
          <p><b>We hope you choose us!</b></p>
         <p>Here at NetDesignsUSA.com we understand that there are hundreds of web design companies for you to choose from, and we are privileged to be under your careful consideration. Please feel free to <a href=		"contactus.html"><strong>contact us</strong></a> with any questions, so that we can do all we can to earn your business.</p>
@@ -70,7 +70,6 @@
 	<div class="col-md-3 col-xs-6">
         <h4>Consultation Checklist</h4>
         <img src="img/checklist.jpg" alt="" class="img-thumbnail img-responsive">
-        <button type="button" class="btn btn-primary" id="downloadables-btn">Free!</button>
         <p><a href="NetDesignsUSA_consultationchecklist.pdf" target="_blank" class="btn btn-info" data-toggle="tooltip" title="View & Download PDF">Read More</a></p>
 	</div>
         
@@ -124,8 +123,11 @@
         $(document).ready(function(){
           $('section').fadeOut(2000).fadeIn(1000);
           $('header').slideUp(1000).slideDown(500);
+          
                   });//ending ready function
+
     </script>
+
 
 </body>
 </html>
